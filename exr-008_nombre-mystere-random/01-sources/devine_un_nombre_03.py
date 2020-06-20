@@ -1,5 +1,6 @@
 # Remplacer le nombre mystère par un nombre aléatoire
-nombre_mystere = 7
+import random
+nombre_mystere = random.randrange(10)
 
 nombre_utilisateur = input("Quel est le nombre mystère ? ")
 
