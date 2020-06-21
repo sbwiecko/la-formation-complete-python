@@ -12,3 +12,6 @@ Utilisateur 8
 Utilisateur 9
 Utilisateur 10
 """
+
+for _ in range(1,11):
+    print(f"Utilisateur {_}")

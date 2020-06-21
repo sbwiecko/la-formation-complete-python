@@ -2,6 +2,6 @@
 # en modifiant les lignes de code dans la boucle while ?
 
 continuer = "o"
-while continuer == "o":
+while continuer != "n":
     print("On continue !")
-    input("Voulez-vous continuer ? o/n ")
+    continuer = input("Voulez-vous continuer ? o/n ")

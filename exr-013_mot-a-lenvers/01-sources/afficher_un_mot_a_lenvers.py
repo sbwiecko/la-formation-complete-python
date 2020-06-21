@@ -8,3 +8,7 @@ t
 y
 P
 """
+
+# j'ai choisi d'inverser tout de suite la chaîne de caractère en question
+for letter in "Python"[::-1]:
+    print(letter)
