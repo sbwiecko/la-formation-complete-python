@@ -23,3 +23,12 @@ option = "0"
  
 while option != "5":
     option = input(affichage)
+    print(liste_de_courses)
+
+# Comment rajouter deux options à l'intérieur de la boucle afin de permettre 
+# à l'utilisateur d'ajouter ou d'enlever des éléments de la liste de courses ?
+
+    if option == '1': liste_de_courses.append(input("Quel élément ajouter ? "))
+    elif option == '2':
+        if (item := input("Quel élément retirer ? ")) in liste_de_courses:
+            liste_de_courses.remove(item)

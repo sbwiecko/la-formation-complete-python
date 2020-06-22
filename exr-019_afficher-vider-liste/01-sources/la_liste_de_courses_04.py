@@ -30,3 +30,13 @@ while option != "5":
         item_a_retirer = input("Entrez le nom de l'élément à enlever: ")
         if item_a_retirer in liste_de_courses:
             liste_de_courses.remove(item_a_retirer)
+    # Comment permettre à l'utilisateur d'afficher le contenu de la liste (un
+    # élément par ligne) et vider la liste de courses ?
+    elif option == '3':
+        if liste_de_courses: # i.e. not empty
+            for item in liste_de_courses:
+                print(item) # or print('\n'.join(liste_de_courses))
+        else:
+            print("La liste est vide...")
+    elif option == '4':
+        liste_de_courses.clear()

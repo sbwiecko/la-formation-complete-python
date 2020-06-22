@@ -18,3 +18,7 @@ Choisissez une option:
 \t4: Vider la liste
 \t5: Terminer
 """
+
+choix = None
+while choix != str(5):
+    choix = input(affichage)

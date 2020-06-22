@@ -37,3 +37,7 @@ while option != "5":
             print("La liste ne contient aucun élément.")
     elif option == "4":
         liste_de_courses.clear()
+
+# on enregistre le ficher json avant de sortir du script
+with open(chemin_liste, 'w') as f:
+    json.dump(liste_de_courses, f)
