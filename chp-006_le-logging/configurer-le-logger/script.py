@@ -1,6 +1,6 @@
 import logging
 
-logging.basicConfig(level=logging.ERROR,
+logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s : %(levelname)s : %(message)s')
 
 logging.debug("La fonction a bien été exécutée")
