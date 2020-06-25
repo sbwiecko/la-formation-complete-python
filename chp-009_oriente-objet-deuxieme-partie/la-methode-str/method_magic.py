@@ -4,7 +4,7 @@ class Voiture:
         self.vitesse = vitesse
 
     def __str__(self):
-        return f"Voiture de marque {self.marque} avec vitesse maximale de {self.vitesse}."
+        return f"Voiture de marque {self.marque} avec vitesse maximale de {self.vitesse}." # !return not print!
 
 porsche = Voiture("Porsche", 200)
 affichage = str(porsche)

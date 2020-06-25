@@ -5,7 +5,7 @@ class Voiture:
         self.prix = prix
 
     @classmethod
-    def lamborghini(cls):
+    def lamborghini(cls): # cls by convention
         return cls(marque="Lamborghini", vitesse=250, prix=200000)
 
     @classmethod

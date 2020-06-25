@@ -15,6 +15,9 @@ class Junior(Utilisateur):
     def __init__(self, nom, prenom):
         super().__init__(nom, prenom)
 
+    # surcharger c'est un peu comme écraser une méthode
+    # cependant Utilisateur.afficher_projets() est intacte
+    # seule la méthode de la classe Junior est modifiée
     def afficher_projets(self):
         for projet in projets:
             if not projet.startswith("pr_"):

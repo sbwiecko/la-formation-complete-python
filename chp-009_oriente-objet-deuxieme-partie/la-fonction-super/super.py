@@ -13,7 +13,10 @@ class Utilisateur:
 
 class Junior(Utilisateur):
     def __init__(self, nom, prenom):
-        super().__init__(nom, prenom)
+        #Utilisateur.__init__(self, nom, prenom)
+        super().__init__(nom, prenom) # accès à la fonction __init__ de la classe parent
+                                      # super() sous-entend Utilisateur comme paramètre
+                                      # mais pas de self passé en arg de __init__
 
 paul = Junior("Paul", "Durand")
 paul.afficher_projets()

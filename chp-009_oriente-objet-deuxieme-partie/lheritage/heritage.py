@@ -12,7 +12,7 @@ class Utilisateur:
         for projet in projets:
             print(projet)
 
-class Junior(Utilisateur):
+class Junior(Utilisateur): # toutes les méthodes de la classe Utilisateur sont héritées
     def __init__(self, nom, prenom):
         Utilisateur.__init__(self, nom, prenom)
 
